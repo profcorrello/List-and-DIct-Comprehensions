@@ -68,7 +68,6 @@ def analyze_scores() -> None:
     # TODO: Implement the list comprehension here.
     squared_scores: List[int] = [
         # Student must implement the comprehension here
-        score * score for score in raw_scores
     ]
     print(f"\n[Part 1: Squared Scores] Original Scores: {raw_scores}")
     print(f"Result (Squared): {squared_scores}")
@@ -82,7 +81,6 @@ def analyze_scores() -> None:
     # TODO: Implement the list comprehension here.
     passing_students: List[str] = [
         # Student must implement the comprehension here
-        name for name, score in student_records if score >= 70
     ]
     print(f"\n[Part 2: Passing Students] Records: {student_records}")
     print(f"Result (Names of those >= 70): {passing_students}")
@@ -96,7 +94,6 @@ def analyze_scores() -> None:
     # TODO: Implement the list comprehension here.
     bonus_points_list: List[int] = [
         # Student must implement the comprehension here
-        calculate_bonus_points(score) for score in raw_scores
     ]
     print(f"\n[Part 3: Bonus Points] Raw Scores: {raw_scores}")
     print(f"Result (Bonus Points): {bonus_points_list}")
